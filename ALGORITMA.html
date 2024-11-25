@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Algoritma &#8212; My sample book</title>
+    <title>ALGORITMA &#8212; My sample book</title>
   
   
   
@@ -16,17 +16,19 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-
-  
-  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
@@ -36,10 +38,11 @@
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
 
     <script src="_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="_static/doctools.js?v=9a2dae69"></script>
@@ -57,13 +60,14 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'Algoritma';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ALGORITMA';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Aljabar Boolean dan Gerbang Logika" href="Aljabar%20Boolean.html" />
-    <link rel="prev" title="jupytext: formats: md:myst text_representation: extension: .md format_name: myst format_version: 0.13 jupytext_version: 1.11.5 kernelspec: display_name: Python 3 language: python name: python3" href="HIMPUNAN.html" />
+    <link rel="next" title="Social Network Analysis (SNA)" href="Social%20Network%20Analysis%20%28SNA%29.html" />
+    <link rel="prev" title="Logika Matematika" href="Logika%20Matematika.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -79,19 +83,8 @@
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="search.html"
       method="get">
@@ -99,7 +92,6 @@
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -107,8 +99,8 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -124,7 +116,8 @@
       
       
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -154,39 +147,37 @@
     
     
     <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="My sample book - Home"/>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    HOME
+                    Welcome to your Jupyter Book
                 </a>
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="HIMPUNAN.html">HIMPUNAN</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Himpunan.html">Himpunan</a></li>
 
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Algoritma</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Aljabar%20Boolean.html">Aljabar Boolean dan Gerbang Logika</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="Logika%20Matematika.html">Logika Matematika</a></li>
 
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">ALGORITMA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Social%20Network%20Analysis%20%28SNA%29.html">Social Network Analysis (SNA)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Deretan%20dan%20Rekursi.html">Deretan dan Rekursi</a></li>
 </ul>
 
     </div>
@@ -258,7 +249,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FAlgoritma.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FALGORITMA.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -288,7 +279,7 @@
       
       
       
-      <li><a href="_sources/Algoritma.md" target="_blank"
+      <li><a href="_sources/ALGORITMA.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -341,24 +332,16 @@
 
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
-  </button>
-`);
-</script>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
+</button>
 <button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
@@ -372,7 +355,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Algoritma</h1>
+    <h1>ALGORITMA</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -384,7 +367,9 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-algoritma">Definisi Algoritma</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#algoritma-sequential-search">Algoritma Sequential Search</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-urutan-sequential-search">Langkah-langkah Urutan Sequential Search</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#algoritma-binary-search">Algoritma Binary Search</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cara-kerja-binary-search">Cara Kerja Binary Search</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pseudocode">Pseudocode</a></li>
@@ -403,20 +388,51 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="algoritma">
-<h1>Algoritma<a class="headerlink" href="#algoritma" title="Link to this heading">#</a></h1>
+<h1>ALGORITMA<a class="headerlink" href="#algoritma" title="Link to this heading">#</a></h1>
 <section id="definisi-algoritma">
 <h2>Definisi Algoritma<a class="headerlink" href="#definisi-algoritma" title="Link to this heading">#</a></h2>
 <p>Algoritma adalah urutan dari sejumlah langkah logis dan sistematis untuk memecahkan suatu masalah tertentu.</p>
 <section id="algoritma-sequential-search">
 <h3>Algoritma Sequential Search<a class="headerlink" href="#algoritma-sequential-search" title="Link to this heading">#</a></h3>
 <p>Sequential search adalah teknik pencarian data yang dilakukan dengan cara membandingkan setiap elemen data satu per satu, mulai dari elemen pertama hingga elemen yang dicari ditemukan.
-Algoritma sequential search sederhana dan mudah dimengerti, tetapi cenderung tidak efisien untuk kumpulan data yang sangat besar.</p>
+Algoritma sequential search sederhana dan mudah dimengerti, tetapi cenderung tidak efisien untuk kumpulan data yang sangat besar.
+Algoritma Sequential Search bekerja dengan melakukan perbandingan satu persatu secara beruntun dalam kumpulan data dengan data yang dicari sampai data tersebut ditemukan atau tidak ditemukan.</p>
+<p>Proses pencarian ini hanya melakukan pengulangan data dari 1 sampai dengan jumlah data (N). Setiap pengulangan, dilakukan perbandingan data ke-i dengan data yang sedang dicari. Jika data sama dengan yang dicari, berarti data telah berhasil ditemukan. Sebaliknya, jika sampai akhir pengulangan tidak ada data yang sama dengan yang dicari, berarti data tidak ditemukan.</p>
+</section>
+<section id="langkah-langkah-urutan-sequential-search">
+<h3>Langkah-langkah Urutan Sequential Search<a class="headerlink" href="#langkah-langkah-urutan-sequential-search" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Mulai dari elemen pertama dalam daftar atau array.</p></li>
+<li><p>Bandingkan elemen tersebut dengan nilai yang dicari (kunci pencarian).</p></li>
+<li><p>Jika elemen cocok dengan kunci pencarian, pencarian berhenti, dan indeks elemen tersebut dikembalikan.</p></li>
+<li><p>Jika elemen tidak cocok, lanjutkan ke elemen berikutnya.</p></li>
+<li><p>Jika sampai elemen terakhir tidak ada yang cocok, berarti data tidak ditemukan.
+Contoh:
+Misalkan kita memiliki daftar angka [10, 25, 30, 45, 50] dan kita ingin mencari angka 30.
+Hasil:
+Output akan menunjukkan indeks di mana angka 30 ditemukan, yaitu indeks ke-2</p></li>
+</ol>
 </section>
 <section id="algoritma-binary-search">
 <h3>Algoritma Binary Search<a class="headerlink" href="#algoritma-binary-search" title="Link to this heading">#</a></h3>
 <p>Binary Search merupakan algoritma pencarian yang membagi data menjadi dua bagian dan mencari elemen yang dicari di salah satu bagian tersebut.
-Jika elemen yang dicari lebih besar dari elemen tengah data, maka pencarian dilanjutkan ke bagian kanan data. Sebaliknya, jika elemen yang dicari lebih kecil dari elemen tengah, pencarian dilanjutkan ke bagian kiri data. Proses ini diulangi sampai elemen yang dicari ditemukan atau seluruh data telah diperiksa.
-Keuntungan dalam menggunakan algoritma ini adalah efisiensinya dalam mencari data terurut. Dalam data yang sangat besar, metode ini mengurangi jumlah langkah yang diperlukan secara signifikan.</p>
+Jika elemen yang dicari lebih besar dari elemen tengah data, maka pencarian dilanjutkan ke bagian kanan data. Sebaliknya, jika elemen yang dicari lebih kecil dari elemen tengah, pencarian dilanjutkan ke bagian kiri data. Proses ini diulangi sampai elemen yang dicari ditemukan atau seluruh data telah diperiksa.</p>
+</section>
+<section id="cara-kerja-binary-search">
+<h3>Cara Kerja Binary Search<a class="headerlink" href="#cara-kerja-binary-search" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Tentukan batas awal dan akhir dari daftar.</p></li>
+<li><p>Cari elemen tengah daftar.</p></li>
+<li><p>Bandingkan nilai elemen tengah dengan nilai yang dicari:
+a.) Jika nilai elemen tengah sama dengan nilai yang dicari, algoritma berhenti, dan posisi elemen tersebut dikembalikan.
+b.) Jika nilai elemen tengah lebih kecil dari nilai yang dicari, abaikan bagian kiri daftar, dan fokus pada bagian kanan.
+c.) Jika nilai elemen tengah lebih besar dari nilai yang dicari, abaikan bagian kanan daftar, dan fokus pada bagian kiri.</p></li>
+<li><p>Ulangi proses ini sampai elemen ditemukan atau sampai batas pencarian tidak valid lagi.
+Contoh:
+Misalkan kita memiliki daftar [10, 20, 30, 40, 50] dan ingin mencari angka 30
+Hasil:
+Output akan menunjukkan indeks di mana angka 30 ditemukan, yaitu indeks ke-2.</p></li>
+</ol>
 </section>
 </section>
 <section id="pseudocode">
@@ -482,30 +498,20 @@ Space Complexity adalah seberapa besar memori yang kita gunakan untuk menjalanka
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="HIMPUNAN.html"
+       href="Logika%20Matematika.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">jupytext:
-formats: md:myst
-text_representation:
-extension: .md
-format_name: myst
-format_version: 0.13
-jupytext_version: 1.11.5
-kernelspec:
-display_name: Python 3
-language: python
-name: python3</p>
+        <p class="prev-next-title">Logika Matematika</p>
       </div>
     </a>
     <a class="right-next"
-       href="Aljabar%20Boolean.html"
+       href="Social%20Network%20Analysis%20%28SNA%29.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Aljabar Boolean dan Gerbang Logika</p>
+        <p class="prev-next-title">Social Network Analysis (SNA)</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -516,7 +522,8 @@ name: python3</p>
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
   <div class="sidebar-secondary-item">
@@ -527,7 +534,9 @@ name: python3</p>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-algoritma">Definisi Algoritma</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#algoritma-sequential-search">Algoritma Sequential Search</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-urutan-sequential-search">Langkah-langkah Urutan Sequential Search</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#algoritma-binary-search">Algoritma Binary Search</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cara-kerja-binary-search">Cara Kerja Binary Search</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pseudocode">Pseudocode</a></li>
@@ -582,8 +591,8 @@ By The Jupyter Book Community
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
 
   <footer class="bd-footer">
   </footer>
