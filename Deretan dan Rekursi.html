@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -65,6 +65,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'Deretan dan Rekursi';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Probabilitas Diskrit &amp; Probabilitas Bayesian" href="Probabilitas%20Diskrit%20Probabilitas%20Bayesian.html" />
     <link rel="prev" title="Social Network Analysis (SNA)" href="Social%20Network%20Analysis%20%28SNA%29.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -176,9 +177,10 @@
 
 <li class="toctree-l1"><a class="reference internal" href="Logika%20Matematika.html">Logika Matematika</a></li>
 
-<li class="toctree-l1"><a class="reference internal" href="ALGORITMA.html">ALGORITMA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Algoritma.html">ALGORITMA</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Social%20Network%20Analysis%20%28SNA%29.html">Social Network Analysis (SNA)</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Deretan dan Rekursi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Probabilitas%20Diskrit%20Probabilitas%20Bayesian.html">Probabilitas Diskrit &amp; Probabilitas Bayesian</a></li>
 </ul>
 
     </div>
@@ -366,22 +368,29 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-deretan-sequence">A. Deretan (sequence)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-contoh-deretan-dan-formulanya">Contoh-contoh Deretan dan Formulanya:</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-aritmatika">1. Deret Aritmatika</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-geometri">2. Deret Geometri</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-bilangan-kuadrat">3. Deret Bilangan Kuadrat</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-bilangan-kubik">4. Deret Bilangan Kubik</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-fibonacci">5. Deret Fibonacci</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-deretan-sequence">A. Deretan (Sequence)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jenis-deretan">Jenis Deretan:</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-aritmatika">1. Deret Aritmatika</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal">Contoh Soal:</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penjumlahan-deretan">Penjumlahan deretan</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sumasi-ganda">Sumasi ganda:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-geometri">2. Deret Geometri</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Contoh Soal:</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-fibonacci">3. Deret Fibonacci</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Contoh Soal:</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-rekursi">B. Rekursi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fungsi-rekursif">Fungsi Rekursif</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#struktur-rekursif">Struktur Rekursif</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ciri-ciri-rekursi">Ciri-Ciri Rekursi</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Contoh Soal</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -398,239 +407,152 @@
   <section class="tex2jax_ignore mathjax_ignore" id="deretan-dan-rekursi">
 <h1>Deretan dan Rekursi<a class="headerlink" href="#deretan-dan-rekursi" title="Link to this heading">#</a></h1>
 <section id="a-deretan-sequence">
-<h2>A. Deretan (sequence)<a class="headerlink" href="#a-deretan-sequence" title="Link to this heading">#</a></h2>
-<p>Deretan (sequence) adalah suatu urutan atau susunan elemen atau yang disusun secara teratur berdasarkan suatu aturan tertentu.</p>
-<p>Elemen dalam deretan biasanya berupa angka, huruf, simbol, atau objek lainnya, dan urutannya dapat didasarkan pada pola, nilai, atau hubungan tertentu.
-Sebuah deretan adalah fungsi dari subset suatu himpunan bilangan bulat (biasanya N atau P) ke sebuah himpunan S.
-N = {1, 2, 3, 4, … }
-S misalnya {2, 4, 6, 8, …},   {1/3, 1/5, 1/7, …}
-Notasi deretan: {an}</p>
-<p>Deretan umumnya dinyatakan dalam suatu formula, misalnya:
-<span class="math notranslate nohighlight">\(a_n\)</span> = 2n
-<span class="math notranslate nohighlight">\(a_n\)</span> = 1/n
-<span class="math notranslate nohighlight">\(a_n\)</span> = 7 – 3n
-Deretan sering merujuk pada barisan bilangan, yaitu kumpulan bilangan yang disusun dalam suatu pola tertentu.
-Misalnya:</p>
-<ul class="simple">
-<li><p>Deretan bilangan ganjil: 1,3,5,7,…</p></li>
-<li><p>Deretan bilangan genap: 2,4,6,8,…</p></li>
-<li><p>Deretan bilangan yang membentuk deret aritmetika: 3,6,9,12….</p></li>
-</ul>
-<section id="contoh-contoh-deretan-dan-formulanya">
-<h3>Contoh-contoh Deretan dan Formulanya:<a class="headerlink" href="#contoh-contoh-deretan-dan-formulanya" title="Link to this heading">#</a></h3>
+<h2>A. Deretan (Sequence)<a class="headerlink" href="#a-deretan-sequence" title="Link to this heading">#</a></h2>
+<p><strong>Deretan</strong> adalah suatu daftar bilangan yang disusun berdasarkan aturan tertentu. Setiap bilangan dalam deretan disebut sebagai <strong>suku</strong>.</p>
+<section id="jenis-deretan">
+<h3>Jenis Deretan:<a class="headerlink" href="#jenis-deretan" title="Link to this heading">#</a></h3>
 <section id="deret-aritmatika">
 <h4>1. Deret Aritmatika<a class="headerlink" href="#deret-aritmatika" title="Link to this heading">#</a></h4>
-<p>Yaitu deret dengan pola kenaikan atau penurunan tetap.
-Contoh: 2,5,8,11,14,…
-Rumus suku ke-n:
-<img alt="image" src="https://hackmd.io/_uploads/SJRasheXJx.png" />
-keterangan:</p>
-<ul class="simple">
-<li><p>𝑎 = suku pertama</p></li>
-<li><p>𝑏 = beda (selisih antar suku</p></li>
-<li><p>𝑛 = nomor suku yang dicari</p></li>
-</ul>
+<p><strong>Yaitu</strong> bilangan yang memiliki pola tertentu dimana selisih antara dua suku berurutan selalu tetap (disebut beda, <span class="math notranslate nohighlight">\(b\)</span>)
+Misal: <span class="math notranslate nohighlight">\(2,5,8,11...\)</span> selisih antar suku adalah <span class="math notranslate nohighlight">\(5-2=3, 8-5=3, dan 11-8=3\)</span>. Jadi selisih <span class="math notranslate nohighlight">\((b)=3\)</span></p>
+<p><strong>Rumus suku ke-<span class="math notranslate nohighlight">\(n\)</span></strong>:
+<span class="math notranslate nohighlight">\(U_n=a+(n-1)\)</span>
+keterangan:
+<span class="math notranslate nohighlight">\(a\)</span> = suku pertama
+<span class="math notranslate nohighlight">\(b\)</span> = beda</p>
+<p><strong>Rumus jumlah <span class="math notranslate nohighlight">\(n\)</span> suku pertama</strong> <span class="math notranslate nohighlight">\((S_n)\)</span>: <span class="math notranslate nohighlight">\((S_n)=\frac{n}{2}(2_a+(n-1)b\)</span></p>
+<section id="contoh-soal">
+<h5>Contoh Soal:<a class="headerlink" href="#contoh-soal" title="Link to this heading">#</a></h5>
+<p>Diberikan deret aritmatika: <span class="math notranslate nohighlight">\(3,7,11,15...\)</span>
+a. Tentukan suku ke-10
+b. Hitung jumlah 10 suku pertama
+Penyelesaian:
+a. Suku ke-10 <span class="math notranslate nohighlight">\((U_1{_0})\)</span>:
+<span class="math notranslate nohighlight">\(U_1{_0}=a+(10-1)\)</span>
+maka,
+<span class="math notranslate nohighlight">\(b=3+9(4)=3+36=39\)</span></p>
+<p>b. Jumlah 10 suku pertama <span class="math notranslate nohighlight">\((S_1{_0})\)</span>:
+<span class="math notranslate nohighlight">\((S_1{_0})= \frac{10}{2}(2(3)+(10-1)(4))\)</span>
+<span class="math notranslate nohighlight">\((S_1{_0}) =5(6+36)=5(42)=210\)</span></p>
+</section>
 </section>
 <section id="deret-geometri">
 <h4>2. Deret Geometri<a class="headerlink" href="#deret-geometri" title="Link to this heading">#</a></h4>
-<p>Yaitu deret dengan pola kelipatan tetap.
-Contoh: 3,6,12,24,48,…
-Rumus suku ke-n:
-<img alt="image" src="https://hackmd.io/_uploads/BJ2X6hlmyg.png" />
-keterangan:</p>
+<p><strong>Yaitu</strong> bilangan yang memiliki pola tertentu dimana perbandingan antara dua suku berurutan selalu tetap. Perbandingan ini disebut rasio, <span class="math notranslate nohighlight">\(r\)</span>
+<strong>Rumus suku ke-<span class="math notranslate nohighlight">\(n\)</span></strong>:
+<span class="math notranslate nohighlight">\(a \cdot r^{n-1}\)</span>
+<strong>Rumus jumlah <span class="math notranslate nohighlight">\(n\)</span> suku pertama</strong>:
+<span class="math notranslate nohighlight">\((S_n)= a \frac{1-r^n}{1-r}(r\neq)\)</span></p>
+<section id="id1">
+<h5>Contoh Soal:<a class="headerlink" href="#id1" title="Link to this heading">#</a></h5>
+<p>Diberikan deret geometri: <span class="math notranslate nohighlight">\(2,6,18,54...\)</span>
+a. Tentukan suku ke-5:
+b. Hitung jumlah 5 suku pertama.
+Penyelesaian:</p>
 <ul class="simple">
-<li><p>𝑎 = suku pertama</p></li>
-<li><p>𝑟 = rasio (perbandingan antar suku,</p></li>
-<li><p>𝑛 = nomor suku yang dicari</p></li>
+<li><p>Suku pertama <span class="math notranslate nohighlight">\((a) = 2\)</span></p></li>
+<li><p>Rasio <span class="math notranslate nohighlight">\((r)=6/2=3\)</span></p></li>
 </ul>
+<p><strong>a</strong>. Suku ke-5 <span class="math notranslate nohighlight">\((U_5)\)</span>:
+<span class="math notranslate nohighlight">\((U_5)=a.r{^5}^{-1}=2.3^4=2.81=162\)</span></p>
+<p><strong>b.</strong> Jumlah 5 suku pertama <span class="math notranslate nohighlight">\((S_5)\)</span>:
+<span class="math notranslate nohighlight">\((S_5) = 2\frac{1-3^5}{1-3} =2\frac{1-243}{-2}=2.121=242\)</span></p>
 </section>
-<section id="deret-bilangan-kuadrat">
-<h4>3. Deret Bilangan Kuadrat<a class="headerlink" href="#deret-bilangan-kuadrat" title="Link to this heading">#</a></h4>
-<p>Yaitu deret dengan pola nilai berupa kuadrat bilangan bulat.
-Contoh: 1,4,9,16,25,…
-Rumus suku ke-n:
-<img alt="image" src="https://hackmd.io/_uploads/H1adh3x7yl.png" />
-keterangan:
-𝑛 = nomor suku yang dicari</p>
-</section>
-<section id="deret-bilangan-kubik">
-<h4>4. Deret Bilangan Kubik<a class="headerlink" href="#deret-bilangan-kubik" title="Link to this heading">#</a></h4>
-<p>Yaitu deret dengan pola nilai berupa kubik bilangan bulat.
-Contoh: 1,8,27,64,125,…
-Rumus suku ke-n:
-<img alt="image" src="https://hackmd.io/_uploads/ryHpa2gmyg.png" />
-keterangan:
-𝑛 = nomor suku yang dicari</p>
 </section>
 <section id="deret-fibonacci">
-<h4>5. Deret Fibonacci<a class="headerlink" href="#deret-fibonacci" title="Link to this heading">#</a></h4>
-<p>Yaitu deret dengan pola dimana setiap suku merupakan jumlah dua suku sebelumnya.
-Contoh: 0,1,1,2,3,5,8,…
-Rumus suku ke-n (rekursif):
-<img alt="image" src="https://hackmd.io/_uploads/HJUN0hlQkg.png" />
+<h4>3. Deret Fibonacci<a class="headerlink" href="#deret-fibonacci" title="Link to this heading">#</a></h4>
+<p><strong>Yaitu</strong> deret secara berulang, di mana suku berikutnya didefinisikan berdasarkan suku sebelumnya.
+<strong>Rumus suku ke-<span class="math notranslate nohighlight">\(n\)</span></strong>:
+<span class="math notranslate nohighlight">\(F_n = F_n{_-}{_1}+F_n{_-}{_2},F_1=1,F_2=1\)</span>
 keterangan:</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(F_n\)</span> = menunjukkan nilai suku ke-<span class="math notranslate nohighlight">\(n\)</span> dalam deret fibonacci</p></li>
 <li><p><span class="math notranslate nohighlight">\(F_n{_-}{_1}\)</span> = nilai suku sebelum suku ke-<span class="math notranslate nohighlight">\(n\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(F_n{_-}{_2}\)</span> = nilai dua suku sebelum suku ke-<span class="math notranslate nohighlight">\(n\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(F_0 = 0\)</span> = suku pertama</p></li>
-<li><p><span class="math notranslate nohighlight">\(F_1 = 1\)</span> = suku kedua</p></li>
+<li><p><span class="math notranslate nohighlight">\(F_1 = 1\)</span> = suku pertama</p></li>
+<li><p><span class="math notranslate nohighlight">\(F_2 = 1\)</span> = suku kedua</p></li>
 </ul>
-<p>String adalah deretan berhingga karakter berbentuk : <span class="math notranslate nohighlight">\(a_1a_2a_3a_4...a_n\)</span></p>
-<p>Panjang string S adalah jumlah karakter di dalam string tersebut.
-contoh:</p>
+<section id="id2">
+<h5>Contoh Soal:<a class="headerlink" href="#id2" title="Link to this heading">#</a></h5>
+<p>Diberikan deret Fibonacci: <span class="math notranslate nohighlight">\(1,1,2,3,5,8\)</span>
+Tentukan suku ke-7 dari deret ini:
+Penyelesaian:</p>
 <ul class="simple">
-<li><p>informatika adalah string dengan panjang 11 karakter</p></li>
-<li><p>10100101 adalah string biner dengan panjang 8 bit</p></li>
+<li><p>Suku ke-3: <span class="math notranslate nohighlight">\(F_3=F_2+F_1=1+1=2\)</span></p></li>
+<li><p>Suku ke-4: <span class="math notranslate nohighlight">\(F_4=F_3+F_2=2+1=3\)</span></p></li>
+<li><p>Suku ke-5: <span class="math notranslate nohighlight">\(F_5=F_4+F_3=3+2=5\)</span></p></li>
+<li><p>Suku ke-6: <span class="math notranslate nohighlight">\(F_6=F_5+F_4=5+3=8\)</span></p></li>
+<li><p>Suku ke-7: <span class="math notranslate nohighlight">\(F_7=F_6+F_5=8+5=13\)</span></p></li>
 </ul>
-<p>String kosong dilambangkan dengan <span class="math notranslate nohighlight">\(\lambda\)</span>, panjangnya = 0</p>
+<p>Jadi suku ke-7 adalah <strong>13</strong></p>
 </section>
 </section>
-<section id="penjumlahan-deretan">
-<h3>Penjumlahan deretan<a class="headerlink" href="#penjumlahan-deretan" title="Link to this heading">#</a></h3>
-<p>Jumlah deretan adalah:
-<span class="math notranslate nohighlight">\(a_m,{a_m}{_+}{_1},{a_m}{_+}{_2}...a_n\)</span>
-<span class="math notranslate nohighlight">\(a_m{_+}{a_m}{_+}{_1},{a_m}{_+}{_2}...a_n\)</span>
-atau dalam notasi sumasi:
-<img alt="image" src="https://hackmd.io/_uploads/HkF-N6xXye.png" />
-keterangan:</p>
-<ul class="simple">
-<li><p>k = indeks summasi</p></li>
-<li><p>m = batas bawah indeks</p></li>
-<li><p>n = batas atas indeks</p></li>
-</ul>
-<p>Contoh:</p>
-<ol class="arabic simple">
-<li><p>Berapa nilai
-<img alt="image" src="https://hackmd.io/_uploads/Bk8Vr6gX1x.png" />
-jawaban:
-<img alt="image" src="https://hackmd.io/_uploads/HyqiH6e7ye.png" /></p></li>
-<li><p>Batas bawah sumasi kadangkala perlu digeser agar dapat dijumlahkan dengan sumasi lain yang memiliki batas bawah berbeda. Pada contoh 2 di atas batas bawah digeser dari 1 menjadi 0, akibatnya:
-<img alt="image" src="https://hackmd.io/_uploads/Bykk8pg7kl.png" /></p></li>
-<li><p>Sumasi dapat dipecah dengan membagi dua indeksnya, misalnya:
-<img alt="image" src="https://hackmd.io/_uploads/SyvbIaxmkg.png" /></p></li>
-<li><p>Hitung nilai
-<img alt="image" src="https://hackmd.io/_uploads/B13tIplQkl.png" />
-jawaban:
-<img alt="image" src="https://hackmd.io/_uploads/SyYoITgm1l.png" />
-gunakan rumus:
-<img alt="image" src="https://hackmd.io/_uploads/rJtpU6lmJg.png" />
-maka: <img alt="image" src="https://hackmd.io/_uploads/r1DJvalXkl.png" /></p></li>
-</ol>
-</section>
-<section id="sumasi-ganda">
-<h3>Sumasi ganda:<a class="headerlink" href="#sumasi-ganda" title="Link to this heading">#</a></h3>
-<p>Di dalam algoritma, kita perlu menghitung berapa kali suatu operasi tertentu dilakukan di dalam sebuah kalang bersarang (nested loop). Penjumlahan semua operasi di dalam kalang bersarang dinyatakan dalam bentuk sumasi ganda.
-Contoh:
-<img alt="image" src="https://hackmd.io/_uploads/BykuD6xmke.png" />
-Untuk menghitung sumasi ganda, mula-mula ekspansi sumasi terdalam, lalu  dilanjukan dengan sumasi terluar:
-<img alt="image" src="https://hackmd.io/_uploads/SJWcvTxmkl.png" /></p>
-<p>Contoh penggunaan:
-Berapa kali operasi + dilakukan di dalam algoritma di bawah ini?
-<img alt="image" src="https://hackmd.io/_uploads/SyzJdTe71l.png" />
-jawaban:
-Operasi + terdapat di dalam pernyataan x = x + 2
-Operasi ini dilakukan satu kali pada setiap pengulangan
-Jumlah seluruh operasi + adalah:
-<img alt="image" src="https://hackmd.io/_uploads/HkNjdpeXkx.png" /></p>
 </section>
 </section>
 <section id="b-rekursi">
 <h2>B. Rekursi<a class="headerlink" href="#b-rekursi" title="Link to this heading">#</a></h2>
-<p>Sebuah objek dikatakan rekursif  (recursive) jika ia didefinisikan dalam terminologi dirinya sendiri.
-Proses mendefinisikan objek dalam terminologi dirinya sendiri disebut rekursi (recursion).</p>
-<section id="fungsi-rekursif">
-<h3>Fungsi Rekursif<a class="headerlink" href="#fungsi-rekursif" title="Link to this heading">#</a></h3>
-<p>Fungsi rekursif didefinisikan oleh dua bagian:</p>
+<p><strong>Rekursi</strong> adalah cara untuk menyelesaikan masalah atau mendefinisikan konsep dengan membaginya menjadi bagian-bagian yang lebih kecil hingga mencapai kondisi sederhana <strong>(base case)</strong>. Ini berguna untuk pola berulang seperti:</p>
+<ul class="simple">
+<li><p>Faktorial</p></li>
+<li><p>Deret Fibonacci</p></li>
+</ul>
+<section id="ciri-ciri-rekursi">
+<h3>Ciri-Ciri Rekursi<a class="headerlink" href="#ciri-ciri-rekursi" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Basis (Base Case): Nilai awal yang diketahui atau kondisi yang menghentikan rekursi.</p></li>
+<li><p>Relasi Rekursif (Recursive Relation): Rumus yang mendefinisikan objek berdasarkan nilai-nilai sebelumnya.</p></li>
+</ul>
+<section id="id3">
+<h4>Contoh Soal<a class="headerlink" href="#id3" title="Link to this heading">#</a></h4>
 <ol class="arabic simple">
-<li><p>Basis</p>
-<ul class="simple">
-<li><p>Bagian yang berisi nilai fungsi yang terdefinisi secara eksplisit.</p></li>
-<li><p>Bagian ini juga sekaligus menghentikan rekursif (dan memberikan sebuah nilai yang terdefinisi pada fungsi rekursif).</p></li>
-</ul>
-</li>
-<li><p>Rekurens</p>
-<ul class="simple">
-<li><p>Bagian ini mendefinisikan fungsi dalam terminologi dirinya sendiri.</p></li>
-<li><p>Berisi kaidah untuk menemukan nilai fungsi pada suatu input dari nilai-nilai lainnya pada input yang lebih kecil.</p></li>
-</ul>
-</li>
+<li><p>Faktorial dari <span class="math notranslate nohighlight">\(n\)</span> adalah hasil perkalian semua bilangan dari 1 sampai <span class="math notranslate nohighlight">\(n\)</span>.
+<span class="math notranslate nohighlight">\(n! =\begin{cases} 1, &amp; \text{jika } n = 0 \text{ atau } n = 1 \quad (\text{Base Case}) \\ 
+n \cdot (n-1)!, &amp; \text{jika } n &gt; 1 \quad (\text{Recursive Case})\end{cases}\)</span>
+Maka, <strong>perhitungan Faktorial Rekursif</strong>:
+Misalnya 5! :</p></li>
 </ol>
-<p>Contoh soal 1:
-Misalkan f didefinsikan secara rekusif sbb
-<img alt="image" src="https://hackmd.io/_uploads/Bktx8rWQke.png" />
-Tentukan nilai f(4)!
-penyelesaian:
-f(4) = 2f(3) + 4
-=  2(2f(2) + 4) + 4
-=  2(2(2f(1) + 4) + 4) + 4
-=  2(2(2(2f(0) + 4) + 4) + 4) + 4
-=  2(2(2(2.3 + 4) + 4) + 4) + 4	
-=  2(2(2(10) + 4) + 4) + 4
-=  2(2(24) + 4) + 4
-=  2(52) + 4
-= 108	
-Cara lain:
-f(0) = 3
-f(1) = 2f(0) + 4 = 2.3  + 4 = 10
-f(2) = 2f(1) + 4 = 2.10 + 4 = 24
-f(3) = 2f(2) + 4 = 2.24 + 4 = 52
-f(4) = 2f(3) + 4 = 2.52 + 4 = 108
-Jadi, f(4) = 108.
-Contoh soal 2:
-Nyatakan n! dalam definisi rekursif
-penyelesaian:
-<img alt="image" src="https://hackmd.io/_uploads/rJmddrZ7kg.png" />
-Jadi, f(4) = 108.
-Contoh soal 3:
-Nyatakan n! dalam definisi rekursif
-penyelesaian:
-<img alt="image" src="https://hackmd.io/_uploads/HJBMtBWQke.png" />
-Misalkan f(n) = n!, maka:
-<img alt="image" src="https://hackmd.io/_uploads/ByZLKSWXyg.png" />
-Menghitung 5! secara rekursif adalah:
-5! = 5.4! = 5.4.3! = 5.4.3.2!
-= 5.4.3.2.1!
-= 5.4.3.2.1.0!	
-= 5.4.3.2.1.1
-= 120
-contoh soal 3:
-Barisan Fibonacci  0, 1, 1, 2, 3, 5, 8, 11, 19, …. Dapat dinyatakan secara rekursif sebagai berikut:
-<img alt="image" src="https://hackmd.io/_uploads/H1y22rZ7yx.png" />
-contoh soal 4:
-Fungsi (polinom) Chebyshev dinyatakan sebagai:
-<img alt="image" src="https://hackmd.io/_uploads/ryKC3Sbm1l.png" />
-contoh soal 5:
-<img alt="image" src="https://hackmd.io/_uploads/SJis6SZ7Je.png" />
-<img alt="image" src="https://hackmd.io/_uploads/Hy-ppr-Q1x.png" />
-sehingga: <img alt="image" src="https://hackmd.io/_uploads/S1leABZ7Jl.png" />
-contoh soal 6:
-<img alt="image" src="https://hackmd.io/_uploads/B1Jc-IW7yg.png" />
-penyelesaian:
-<img alt="image" src="https://hackmd.io/_uploads/SkbgGLZQkx.png" />
-contoh soal 7:
-<img alt="image" src="https://hackmd.io/_uploads/HyJGfL-QJe.png" />
-penyelesaian:
-<img alt="image" src="https://hackmd.io/_uploads/rkgEGUZ71x.png" /></p>
-</section>
-<section id="struktur-rekursif">
-<h3>Struktur Rekursif<a class="headerlink" href="#struktur-rekursif" title="Link to this heading">#</a></h3>
-<p>Struktur data yang penting dalam komputer adalah pohon biner (binary tree).
-<img alt="image" src="https://hackmd.io/_uploads/rJDtGU-Qkl.png" /></p>
-<ul>
-<li><p>Simpul (node) pada pohon biner mempunyai paling banyak dua buah anak.</p></li>
-<li><p>Jumlah anak pada setiap simpul bisa 1, 2, atau 0.</p></li>
-<li><p>Simpul yang mempunyai anak disebut simpul cabang (branch node) atau simpul dalam (internal node)</p></li>
-<li><p>Simpul yang tidak mempunyai anak disebut simpul daun (leave).
-Pohon biner adalah struktur yang rekursif, sebab setiap simpul mempunyai cabang yang juga berupa pohon. Setiap cabang disebut  upapohon (subtree).
-<img alt="image" src="https://hackmd.io/_uploads/SJzAzL-7Jx.png" />
-Oleh karena itu, pohon dapat didefinisikan secara rekursif sebagari berikut:</p>
-<p>(i) Basis: kosong adalah pohon biner
-(ii) Rekurens: Jika T1 dan T2 adalah pohon biner, maka adalah pohon biner
-Proses pembentukan pohon biner secara rekursif:
-<img alt="image" src="https://hackmd.io/_uploads/HkoGXU-71l.png" /></p>
-</li>
+<ul class="simple">
+<li><p>5! = 5 . 4!</p></li>
+<li><p>4! = 4 . 3!</p></li>
+<li><p>3! = 3 . 2!</p></li>
+<li><p>2! = 2 . 1!</p></li>
+<li><p>1! = 1 . 1! <strong>(Base Case)</strong>
+Hasilnya adalah:
+5! = 5.4.3.2.1= <strong>120</strong></p></li>
 </ul>
+<ol class="arabic simple" start="2">
+<li><p>Deret Fibonacci didefinisikan sebagai:
+<span class="math notranslate nohighlight">\(F_n =\begin{cases} 1, &amp; \text{jika } n = 1 \text{ atau } n = 2 \quad (\text{Base Case}) \\ 
+F_{n-1} + F_{n-2}, &amp; \text{jika } n &gt; 2 \quad (\text{Recursive Case})\end{cases}\)</span>
+Deret ini menghasilkan angka: <span class="math notranslate nohighlight">\(1,1,2,3,5,8,13..\)</span>
+Hitung Fibonacci Rekursif untuk <span class="math notranslate nohighlight">\(F_6\)</span> !
+<strong>Penyelesaian</strong>:
+Untuk menghitung <span class="math notranslate nohighlight">\(F_6\)</span> gunakan definisi rekursif:
+<span class="math notranslate nohighlight">\(F_n = F_{n-1} + F_{n-2}\)</span>
+mulai dari 6 dan pecahkan hingga mencapai <strong>Base Case:</strong></p></li>
+</ol>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(F_6 = F_5 + F_4\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(F_5 = F_4 + F_3\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(F_4 = F_3 + F_2\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(F_3 = F_2 + F_1\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(F_2 = 1\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(F_1 = 1\)</span>
+maka :</p></li>
+<li><p><span class="math notranslate nohighlight">\(F_3 = F_2 + F_1 = 1 + 1 = 2\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(F_4 = F_3 + F_2 = 2 + 1 = 3\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(F_5 = F_4 + F_3 = 3 + 2 = 5\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(F_6 = F_5 + F_4 = 5 + 3 = 8\)</span>
+Jadi <span class="math notranslate nohighlight">\(F_6 = 8\)</span></p></li>
+</ul>
+<ol class="arabic simple" start="3">
+<li><p>Hitung jumlah <span class="math notranslate nohighlight">\(6\)</span> suku pertama dari deret Fibonacci <span class="math notranslate nohighlight">\((S_6)\)</span>:
+<strong>Penyelesaian:</strong>
+Jumlah <span class="math notranslate nohighlight">\(6\)</span> suku pertama: <span class="math notranslate nohighlight">\(S_6 = F_1 + F_2 + F_3 + F_4 + F_5 + F_6\)</span>
+Gunakan nilai yang telah dihitung pada soal nomor 2 tadi
+Maka, <span class="math notranslate nohighlight">\(S_6 = 1 + 1 + 2 + 3 + 5 + 8= 20\)</span></p></li>
+</ol>
+</section>
 </section>
 </section>
 </section>
@@ -674,6 +596,15 @@ Proses pembentukan pohon biner secara rekursif:
         <p class="prev-next-title">Social Network Analysis (SNA)</p>
       </div>
     </a>
+    <a class="right-next"
+       href="Probabilitas%20Diskrit%20Probabilitas%20Bayesian.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Probabilitas Diskrit &amp; Probabilitas Bayesian</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -691,22 +622,29 @@ Proses pembentukan pohon biner secara rekursif:
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-deretan-sequence">A. Deretan (sequence)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-contoh-deretan-dan-formulanya">Contoh-contoh Deretan dan Formulanya:</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-aritmatika">1. Deret Aritmatika</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-geometri">2. Deret Geometri</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-bilangan-kuadrat">3. Deret Bilangan Kuadrat</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-bilangan-kubik">4. Deret Bilangan Kubik</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-fibonacci">5. Deret Fibonacci</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-deretan-sequence">A. Deretan (Sequence)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jenis-deretan">Jenis Deretan:</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-aritmatika">1. Deret Aritmatika</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal">Contoh Soal:</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penjumlahan-deretan">Penjumlahan deretan</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sumasi-ganda">Sumasi ganda:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-geometri">2. Deret Geometri</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Contoh Soal:</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-fibonacci">3. Deret Fibonacci</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Contoh Soal:</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-rekursi">B. Rekursi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fungsi-rekursif">Fungsi Rekursif</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#struktur-rekursif">Struktur Rekursif</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ciri-ciri-rekursi">Ciri-Ciri Rekursi</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Contoh Soal</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
